@@ -4,6 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Validation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            width: 600px;
+            padding: 20px;
+        }
+
+        form div {
+            margin: 10px;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <h1>Form validation</h1>
@@ -12,6 +31,47 @@
             <label for="nama">Masukkan Nama:</label>
             <input type="text" name="nama" id="nama">
         </div>
+
+        <div>
+            <label for="email">Masukkan E-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="nohp">Masukkan No Hp:</label>
+            <input type="tel" name="nohp" id="nohp">
+        </div>
+
+        <div>
+            <label for="website">Masukkan Website:</label>
+            <input type="url" name="website" id="website">
+        </div>
+
+        <div>
+            <label for="angka">Masukkan Angka:</label>
+            <input type="number" name="angka" id="angka">
+        </div>
+
+        <div>
+            <label for="slider">Masukkan Angka:</label>
+            <input type="range" name="slider" id="slider" min="0" max="100">
+        </div>
+        
+        <div>
+            <label for="tanggal">Masukkan Tanggal:</label>
+            <input type="date" name="tanggal" id="tanggal">
+        </div>
+        
+        <div>
+            <label for="jam">Pilih Jam:</label>
+            <input type="time" name="jam" id="jam">
+        </div>
+        
+        <div>
+            <label for="warna">Pilih Warna:</label>
+            <input type="color" name="warna" id="warna">
+        </div>
+
         <div>
             <button type="submit">Kirim</button>
         </div>
