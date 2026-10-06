@@ -1,2 +1,2 @@
-# Tugas-T2-Halaman-Profil-Semantik
-tugas pemrograman pertama pada semester 3
+# Praktik_Latihan_PWD_semester_3
+Pemrograman selama semester 3
