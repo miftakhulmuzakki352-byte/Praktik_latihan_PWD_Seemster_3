@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root { /*variabel warna dan ukuran*/
+    --bg-color: #070b14;
+    --bg-secondary: #0c1220;
+    --card-color: #101a2b;
+    --primary-color: #00e5ff;
+    --primary-hover: #66f0ff;
+    --text-color: #f3f7ff;
+    --text-secondary: #9aa9c0;
+    --border-color: rgba(0, 229, 255, 0.17);
+    --glow-color: rgba(0, 229, 255, 0.12);
+    --container-width: 1150px;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smoth;
+}
+
+html {
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'inter', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%
+}
