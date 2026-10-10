@@ -1,3 +1,4 @@
+/*Import Font dari Google*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root { /*variabel warna dan ukuran*/
@@ -24,6 +25,9 @@ html {
     scroll-padding-top: 90px;
 }
 
+/* 3.Menyamakan pengaturan awal elemen HTML.*/
+
+/*boody*/
 body {
     font-family: 'inter', sans-serif;
     background: var(--bg-color);
@@ -42,5 +46,176 @@ ul {
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
+    display: block;
+}
+
+button,
+    a {
+        -webkit-tap-highlight-color: transparant;
+    }
+
+    ::selection {
+        background: var(--primary-color);
+        color: var(--bg-color);
+    }
+
+    /*navbar*/
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(7, 11, 20, 0.88);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255, 255, 255, 00.06);
+}
+
+.navbar {
+    width: min(90%, var(--container-width));
+    min-height: 78px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30;
+}
+
+.logo,
+.footer-logo {
+    font-family: 'space Grotesk', sans-serif;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.logo span,
+.footer-logo {
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-menu a{
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+     position: relative;
+}
+
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: var(--bg-color);
+    transition: widht 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--primary-color);
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after{
+    width: 100%;
+}
+
+
+/*pengaturan section*/
+.section {
+    width: 100%;
+    padding: 110px 0;
+    position: relative;
+}
+
+.section-header {
+    width: min(90%, var(--container-width));
+    margin: 0 auto 45px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.section-label {
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-label h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clam(30px, 4vw, 48px);
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+/*home*/
+.home {
+    min-height: 100vh;
+    padding-top: 145px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at 78% 40%,
+            rgba(0, 229, 0.09),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(38, 75, 150, 0.12),
+            tranparent 35%
+        ),
+        var(--bg-color);
+}
+
+.home-container {
+    max-width: 650px;
+}
+
+.evailability {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 9px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    background: rgba(0, 229, 255, 0.045);
+    margin-bottom: 25px;
+}
+
+.evailability span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    box-shadow: 0 0 12px var(--primary-color);
+}
+
+.intro-text {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
